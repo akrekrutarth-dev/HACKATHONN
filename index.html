@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Smart Attendance</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/html5-qrcode" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📌 QR Smart Attendance</h1>
+
+    <div id="qr-reader" style="width:100%; max-width:400px; margin:auto;"></div>
+
+    <div id="qr-manual">
+      <input type="text" id="qr-input" placeholder="Or type QR code manually">
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <div id="message"></div>
+
+    <div id="records-section">
+      <h2>Attendance Records</h2>
+      <ul id="records-list"></ul>
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+      <a href="students.html">👨‍🎓 Manage Students</a> |
+      <a href="admin.html">📊 Admin Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>

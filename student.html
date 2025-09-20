@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Students - QR Smart Attendance</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script src="students.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>👨‍🎓 Manage Students</h1>
+
+    <div id="student-form">
+      <input type="text" id="student-name" placeholder="Enter student name">
+      <button id="add-student-btn">➕ Add Student</button>
+    </div>
+
+    <h2>Registered Students</h2>
+    <table id="students-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Student Name</th>
+          <th>QR Code</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div style="margin-top:20px; text-align:center;">
+      <a href="index.html">⬅ Back to Attendance</a> |
+      <a href="admin.html">📊 Admin Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>

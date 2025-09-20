@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - QR Smart Attendance</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Admin Dashboard</h1>
+
+    <div id="admin-records">
+      <h2>All Attendance Records</h2>
+      <table id="records-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date & Time</th>
+            <th>Student Name & QR</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:20px; text-align:center;">
+      <button id="download-btn">⬇ Download CSV</button>
+      <button id="clear-btn">🗑 Clear All Records</button>
+    </div>
+
+    <div style="margin-top:20px; text-align:center;">
+      <a href="index.html">⬅ Back to Attendance</a> |
+      <a href="students.html">👨‍🎓 Manage Students</a>
+    </div>
+  </div>
+</body>
+</html>
